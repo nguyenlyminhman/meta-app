@@ -1,0 +1,336 @@
+.notableItem {
+  display: inline-block;
+  /* width: 792px; */
+  width: 360px;
+  height: 370px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 20px;
+  background-image: url("/src/assets/images/mysbox-bg.jpg");
+  background-size: 360px 365px;
+  /* box-shadow: 2px 4px #888888; */
+  background-repeat: no-repeat;
+}
+
+.notableInfo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 0;
+}
+
+.exploreBtn:global(.ant-btn) {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 90px;
+  border-color: #f27252;
+  margin-bottom: 30px;
+}
+
+.exploreBtn:global(.ant-btn:hover),
+.exploreBtn:global(.ant-btn:focus) {
+  color: #ffffff;
+  background: linear-gradient(180deg, #f27252 0%, #e85443 100%);
+  border: none;
+}
+
+.exploreBtn:global(.ant-btn:focus) span,
+.exploreBtn:global(.ant-btn:hover) span {
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.notableInfo :global(.ant-card-meta-title) {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.notableInfo :global(.ant-card-meta-description) {
+  color: #fff;
+  font-size: 18px;
+}
+
+.notableInfo :global(.ant-avatar) {
+  width: 70px;
+  height: 70px;
+}
+
+.wrapper {
+  max-width: 100%;
+  width: auto;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  /* margin-left:5%; */
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+}
+
+.wrapperInner {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.cardboxSP {
+  max-width: auto;
+  padding: 14px;
+  margin: 5px;
+  /* background: #ffffff; */
+  border-radius: 20px;
+  width: 360px;
+  height: 370px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 2px 4px #888888;
+  font-family: "GILROY ";
+  background-image: url("/src/assets/images/mysbox-bg.jpg");
+  background-size: 360px 365px;
+  background-repeat: no-repeat;
+}
+
+.cardbox {
+  max-width: auto;
+  padding: 14px;
+  margin: 5px;
+  /* background: #ffffff; */
+
+  width: 360px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 2px 4px #888888;
+  font-family: "GILROY ";
+}
+
+.cardbox:hover {
+  border-color: #617ad3 !important;
+}
+
+.image {
+  position: relative;
+  background: #adadad;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.imageSP {
+  position: relative;
+  background: #adadad;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-bottom: 8px; */
+  text-align: left;
+  bottom: 10px;
+}
+
+.numberst {
+  color: #000000;
+  position: relative;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+  text-align: left;
+  font-family: "GILROY ";
+}
+
+.plus {
+  font-size: small;
+  color: green;
+  font-family: "GILROY ";
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "GILROY ";
+}
+
+.id {
+  font-size: 16px;
+  color: #adadad;
+}
+
+.price {
+  font-size: 14px;
+  font-family: "GILROY ";
+}
+
+.byAuthor span {
+  color: #f27252;
+}
+
+.description {
+  font-size: 16px;
+  font-family: "GILROY ";
+}
+
+.bg {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerContent {
+  background: #f3f3f3;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.createdBy {
+  font-size: 18px;
+  color: #000000;
+}
+.createdBy span {
+  background: -webkit-linear-gradient(180deg, #f27252, #e85443 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.number {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+.attr {
+  font-size: 18px;
+}
+.statics {
+  display: flex;
+  justify-content: center;
+}
+.statics :global(.ant-row) {
+  padding: 10px 20px;
+  border: 1px solid #adadad;
+  border-radius: 10px;
+  margin: 16px;
+}
+.desc {
+  font-size: 20px;
+  color: #000000;
+}
+
+.icon {
+  font-size: 25px;
+  color: #f27252 !important;
+}
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .number {
+    font-size: 18px;
+  }
+  .attr {
+    font-size: 16px;
+  }
+  .icon {
+    font-size: 16px;
+  }
+  .statics :global(.ant-row) {
+    padding: 10px;
+  }
+  .wrapperInner {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrapperInner {
+    grid-template-columns: auto;
+  }
+  .cardbox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapperInner {
+    grid-template-columns: auto;
+  }
+  .cardbox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .wrapperInner {
+    grid-template-columns: auto;
+  }
+  .cardbox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapperInner {
+    grid-template-columns: auto;
+  }
+  .cardbox {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapperInner {
+    grid-template-columns: auto !important;
+  }
+  .cardbox {
+    width: 270px !important;
+    margin-left: 8px !important;
+  }
+  .number {
+    font-size: 16px !important;
+  }
+  .attr {
+    font-size: 14px !important;
+  }
+  .icon {
+    font-size: 14px !important;
+  }
+  .price {
+    font-size: 12px;
+    font-family: "GILROY ";
+  }
+  @media screen and (max-width: 350px) {
+    .wrapperInner {
+      grid-template-columns: auto;
+    }
+    .cardbox {
+      width: auto;
+    }
+  }
+}

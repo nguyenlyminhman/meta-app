@@ -1,0 +1,74 @@
+.gameLayout {
+  width: 400px;
+}
+
+.gameContainer {
+  display: flex;
+}
+
+.gameBuyProperties,
+.gameDashboard {
+  flex-grow: 1;
+}
+
+.layoutItem {
+  border-radius: 10px;
+  height: 200px;
+  padding: 20px 10px;
+  display: flex;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.layoutItem .title {
+  font-size: 14px;
+}
+
+.layoutItem .description {
+  font-size: 10px;
+  line-height: 12px;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.layoutItem img {
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+}
+
+.layoutItem :global(.ant-btn) {
+  height: 28px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.layoutItem.ssr {
+  background-color: #ff8d40;
+}
+
+.layoutItem.sr {
+  background-color: #ffb800;
+}
+
+.layoutItem.r {
+  background-color: #765eb0;
+}
+
+.layoutItemRight {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.layoutItemRight .itemOwner {
+  line-height: 14px;
+}
+
+.layoutItemRight .itemOwner p:first-child {
+  font-weight: 700;
+}

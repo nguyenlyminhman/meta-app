@@ -1,0 +1,1054 @@
+.header {
+  padding: 0 !important;
+  width: 100%;
+  height: auto !important;
+}
+
+.topBg {
+  width: 100%;
+  background: linear-gradient(180deg, #262831 0%, #262831 100%);
+}
+
+.bottomBg {
+  width: 100%;
+  background: white;
+}
+
+.topHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 45px 15px;
+  margin: 0 auto;
+}
+
+.topHeaderMd {
+  padding: 18px 16px;
+}
+
+.topMenuIconDot {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+.topMenuIcon {
+  display: flex;
+  position: relative;
+}
+
+.topMenuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.topMenuMdWrapper {
+  justify-content: flex-start;
+}
+
+.dropdown {
+  background: #fff !important;
+  height: 42px !important;
+  padding: 10px !important;
+  width: 100% !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  border-radius: 10px !important;
+  border: 1px solid black !important;
+  position: relative !important;
+}
+
+.dropdown:hover {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+:local .dropdown :global(.anticon-down) {
+  color: black;
+  position: absolute !important;
+  right: 20px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex !important;
+  font-size: 16px !important;
+}
+
+.bottomHeader {
+  width: 100%;
+  padding: 8px 9px;
+  display: flex;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bottomHeaderClose {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  max-height: 0;
+}
+
+.logoHomeWrapper {
+  display: flex !important;
+}
+
+.menuRight {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.menuItems {
+  display: flex;
+  margin-left: 10px;
+  flex: auto;
+  justify-content: space-between;
+}
+
+.input:global(.ant-input-affix-wrapper) {
+  background: transparent !important;
+  border-radius: 6px !important;
+  width: 384px;
+  height: 42px;
+}
+
+.input :global(.ant-input) {
+  color: #fff !important;
+}
+
+.input:hover {
+  border-color: #fff !important;
+}
+
+:local .input :global(.ant-input) {
+  background: transparent;
+}
+
+.bottomMenu {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.bottomMenuSm {
+  margin-right: 20px;
+  line-height: 50px !important;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  :local .bottomMenu :global(.ant-menu-item-selected):not(.menuCreate) {
+    background-color: transparent !important;
+    background: blue !important;
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+  }
+  :local .bottomMenu :global(.ant-menu-item) {
+    transition: all 0.3s ease-in-out !important;
+    border-radius: 10px;
+    line-height: unset;
+    max-height: 42px;
+    /* display: flex !important; */
+    align-items: center;
+  }
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */
+  :local .bottomMenu :global(.ant-menu-item) {
+    transition: all 0.3s ease-in-out !important;
+    border-radius: 10px;
+    line-height: unset;
+    max-height: 42px;
+    display: flex !important;
+    align-items: center;
+  }
+}
+/*  */
+:local .bottomMenu :global(.ant-menu-item-selected):not(.menuCreate) {
+  background-color: transparent !important;
+  background: -webkit-linear-gradient(#27aae1, #617ad3) !important;
+  color: white;
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+}
+:local
+  .bottomMenu
+  :global(.ant-menu-item-selected.ant-menu-item-active):not(.menuCreate) {
+  -webkit-text-fill-color: -webkit-linear-gradient(#27aae1, #617ad3) !important;
+}
+
+:local .bottomMenu :global(.ant-menu-title-content) {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+:local .bottomMenuSm :global(.ant-menu-title-content) {
+  font-size: 14px;
+}
+
+:local .bottomMenuSm :global(.ant-menu-item) {
+  padding: 0 !important;
+  margin: 0 15px 0 0 !important;
+}
+
+/*  */
+
+:local .bottomMenu :global(.ant-menu-item-active:not(.ant-menu-item-disabled)) {
+  background: linear-gradient(180deg, #262831 0%, #262831 100%) !important;
+  color: white !important;
+  opacity: 0 - 1;
+  background: transparent;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+.iconBottomWrapper {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hambugerWrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.hambugerWrapper :global(svg) {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.svgIcon {
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.creates {
+  color: linear-gradient(180deg, #27aae1 0%, #617ad3 100%) !important;
+}
+
+.icon:hover {
+  background: linear-gradient(180deg, #262831 0%, #262831 100%);
+}
+
+a.menuLink {
+  color: black !important;
+  font-family: "GILROY ";
+}
+
+a.menuLink:global(.ant-menu-item::after),
+a.menuLink:global(.ant-menu-item-disable::after) {
+  border-bottom: none !important;
+  color: red;
+}
+
+:global(.ant-menu-item:not(.ant-menu-item-disabled)) a.menuLink:hover {
+  color: rgb(255, 255, 255) !important;
+}
+:global(.ant-menu-item:not(.ant-menu-item-disabled)) a.menuLink {
+  color: rgb(0, 0, 0) !important;
+}
+:global(.ant-menu-item-active:not(.ant-menu-item-disabled))
+  :global(.ant-menu-horizontal > .ant-menu-item)
+  a.menuLink:hover {
+  color: rgb(255, 255, 255) !important;
+}
+:global(.ant-menu-horizontal > .ant-menu-item-selected) a.menuLink:hover {
+  color: rgb(255, 255, 255) !important;
+}
+:global(.ant-menu-horizontal > .ant-menu-item-selected) a.menuLink {
+  color: rgb(255, 255, 255) !important;
+}
+:global(.ant-menu-horizontal > .ant-menu-item-selected) a.menuLink {
+  color: rgb(255, 255, 255) !important;
+}
+
+li.menuCreate {
+  margin: 0 2px;
+  font-family: "GILROY ";
+  background: linear-gradient(180deg, #262831 0%, #262831 100%) !important;
+}
+
+li.menuCreate:hover a,
+li.menuCreate a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+li.menuCreate:global(.ant-menu-item::after),
+li.menuCreate:global(.ant-menu-item-selected::after) {
+  border-bottom: none !important;
+}
+
+/*  */
+li.menuLink {
+  margin: 0 2px;
+  font-family: "GILROY ";
+  background: linear-gradient(180deg, #262831 0%, #262831 100%) !important;
+}
+
+li.menuLink:hover a,
+li.menuLink a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+li.menuLink:global(.ant-menu-item::after),
+li.menuLink:global(.ant-menu-item-selected::after) {
+  border-bottom: none !important;
+}
+
+li.menuLink:global(.ant-menu-item-selected::after) {
+  color: #000 !important;
+}
+
+li.menuCreate:hover {
+  background: linear-gradient(to bottom, #27aae1, #617ad3) border-box !important;
+}
+
+:global(.ant-menu-item) a.menuCreate:hover,
+:local(.ant-menu-horizontal > .ant-menu-item) a.menuCreate:hover,
+:local(.ant-menu-horizontal > .ant-menu-item-selected)
+  a.menuCreate:hover
+  :local(.ant-menu-horizontal > .ant-menu-item-selected)
+  a.menuCreate {
+  color: #fff !important;
+}
+
+.walletInfo {
+  min-width: 240px;
+
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  color: #000000;
+  display: flex;
+  margin-top: -7px;
+  margin-left: -40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.iconLogo {
+  margin-top: -45px;
+  margin-bottom: -50px;
+  top: 0px;
+  left: 120px;
+  size: 30px;
+  font-size: 150px;
+}
+.profile {
+  margin-right: -180px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person {
+  min-width: 10px;
+
+  margin-right: -5%;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.person_mobile {
+  min-width: 10px;
+
+  margin-right: 10%;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darkmodeIcon {
+  min-width: 240px;
+  background: #333333;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.chainWrapper {
+  max-width: 240px;
+  margin-left: auto;
+}
+
+.inputDesktop:global(.ant-input-affix-wrapper) {
+  width: 100%;
+  margin: auto 20px;
+}
+
+/* mobile */
+
+a.menuCreate_mobile {
+  color: rgb(60, 60, 247) !important;
+  margin-left: -25px;
+  font-size: 15px;
+  padding-right: 0px;
+  font-family: "GILROY ";
+}
+
+:global(.ant-menu-item) a.menuCreate_mobile:hover,
+:local(.ant-menu-horizontal > .ant-menu-item) a.menuCreate_mobile:hover,
+:local(.ant-menu-horizontal > .ant-menu-item-selected)
+  a.menuCreate_mobile:hover,
+:local(.ant-menu-horizontal > .ant-menu-item-selected) a.menuCreate_mobile {
+  color: rgb(60, 60, 247) !important;
+}
+
+.subMenuMobile {
+  background: #333333;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subMenuMobile :global(.ant-space) {
+  line-height: 42px;
+}
+
+.subMenuMobile :global(.ant-space span) {
+  background: linear-gradient(180deg, #262831 0%, #262831 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.profile_mobile {
+  color: #000000;
+  display: contents;
+  align-items: right;
+  justify-content: center;
+}
+
+.walletInfo_mobile {
+  min-width: 180px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  color: #000000;
+  display: flex;
+  margin-left: 0px;
+  margin-top: -10px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.iconLogo_mobile {
+  margin-top: -45px;
+  margin-bottom: -50px;
+  top: 0px;
+  left: 120px;
+  size: 30px;
+  font-size: 150px;
+}
+
+.submenuMode {
+  text-align: center;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.submenuMode button,
+.submenuMode button div {
+  height: auto !important;
+}
+
+@media screen and (max-width: 310px) {
+  .topMenuIcon :global(svg) {
+    width: 100% !important;
+  }
+
+  .topHeader :global(.ant-col:last-child) {
+    width: 100% !important ;
+  }
+  .menuRight {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .iconLogo{
+    margin-top: -40px !important;
+    margin-left: 10px;
+  }
+
+  .bottomHeader :global(.ant-menu-item span) {
+    font-size: 20px !important;
+  }
+  a.menuCreate {
+    font-size: 20px !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+  a.menuLink {
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+  .profile {
+    margin-left: 0px !important;
+  }
+  .walletInfo_mobile {
+    font-size: 10px !important;
+    margin-left: -20px !important;
+    margin-top: -8px !important;
+  }
+}
+
+/* @media screen and (min-width: 450px) {
+  .topMenuIcon :global(svg) {
+    width: 100% !important;
+  }
+
+  .topHeader :global(.ant-col:last-child) {
+    width: 100% !important ;
+  }
+  .menuRight {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .menuLine2 {
+    margin-left: -100px !important;
+  }
+
+  .bottomHeader :global(.ant-menu-item span) {
+    font-size: 20px !important;
+  }
+  a.menuCreate {
+    font-size: 20px !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+  a.menuLink {
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+  .profile {
+    margin-left: 0px !important;
+  }
+  .walletInfo_mobile {
+    font-size: 10px !important;
+    margin-left: -20px !important;
+    margin-top: -8px !important;
+  }
+} */
+
+@media only screen and (min-width: 310px) and (max-width: 450px) {
+  .topMenuIcon :global(svg) {
+    width: 100% !important;
+  }
+
+  .topHeader :global(.ant-col:last-child) {
+    width: 100% !important ;
+  }
+  .iconLogo{
+    margin-top: -35px !important;
+    margin-left: 10px;
+  }
+  .menuRight {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .menuLine2 {
+    margin-left: 25px !important;
+  }
+
+  .bottomHeader :global(.ant-menu-item span) {
+    font-size: 20px !important;
+  }
+  a.menuCreate {
+    font-size: 20px !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+  a.menuLink {
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+  .profile {
+    margin-left: -15px !important;
+  }
+  .walletInfo_mobile {
+    font-size: 10px !important;
+    margin-left: -20px !important;
+    margin-top: -8px !important;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 750px) {
+  .topMenuIcon :global(svg) {
+    width: 100% !important;
+  }
+
+  .topHeader :global(.ant-col:last-child) {
+    width: 100% !important ;
+  }
+  .menuRight {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .menuLine2 {
+    margin-left: 100px !important;
+  }
+
+  .bottomHeader :global(.ant-menu-item span) {
+    font-size: 20px !important;
+  }
+  a.menuCreate {
+    font-size: 20px !important;
+    text-align: right !important;
+    margin-left: auto !important;
+  }
+  a.menuLink {
+    font-size: 10px !important;
+    text-align: left !important;
+  }
+  .profile {
+    margin-left: -15px !important;
+  }
+  .walletInfo_mobile {
+    font-size: 10px !important;
+    margin-left: -20px !important;
+    margin-top: -8px !important;
+  }
+}
+/* 
+@media screen and (min-width: 750px) {
+  .topMenuIcon :global(svg) {
+    width: 100%;
+  }
+
+  .topHeader :global(.ant-col:last-child) {
+    width: 100%;
+  }
+  .menuRight {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .bottomHeader :global(.ant-menu-item span) {
+    font-size: 20px;
+  }
+  a.menuCreate {
+    font-size: 13px !important;
+    text-align: right;
+    margin-left: 20px;
+  }
+  a.menuLink {
+    font-size: 11px !important;
+    text-align: center;
+    margin: auto;
+  }
+  .profile {
+    margin-left: -20px !important;
+    margin-right: 20px;
+  }
+  .dropdown {
+    font-size: 11px !important;
+  }
+} */
+
+@media screen and (max-width: 1200px) {
+  .walletInfo {
+    min-width: auto;
+  }
+  .inputDesktop:global(.ant-input-affix-wrapper) {
+    width: 100% !important;
+    margin-right: 20px !important;
+  }
+  .input:global(.ant-input-affix-wrapper) {
+    width: 200px;
+  }
+  .menuRight {
+    margin-left: 20px;
+  }
+  a.menuLink{
+    font-size: 10px !important;
+  }
+
+
+  .menuItems {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .input:global(.ant-input-affix-wrapper) {
+    width: 140px;
+  }
+  .iconLogo {
+    margin-top: -45px;
+    margin-bottom: -50px;
+    top: 0px;
+    left: 120px;
+    size: 30px;
+    font-size: 150px;
+  }
+  .walletInfo {
+    min-width: unset;
+  }
+
+  .bottomMenu :global(.ant-menu-item) {
+    padding: 0 8px !important;
+  }
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 800px) {
+  .menuRight {
+    flex-direction: column-reverse;
+    margin-left: 10px;
+  }
+  .input:global(.ant-input-affix-wrapper) {
+    width: 100%;
+  }
+  .menuItems {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .iconLogo {
+    margin-top: 0px !important;
+    margin-bottom: -50px;
+    top: 0px;
+    left: 120px;
+    size: 30px;
+    font-size: 60px;
+  }
+  .logoHomeWrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomHeader {
+    align-items: flex-start;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 50px !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+  }
+  .menuLine2 {
+    margin-left: 150px;
+  }
+  .profile {
+    margin-right: 0px !important;
+  margin-top: 5px !important;
+  }
+  .walletInfo {
+    width: 100px !important;
+    margin-left: 15px;
+    min-width: 130px !important
+  }
+  a.menuLink {
+    font-size: 9.5px !important;
+  }
+  .menuLine3 {
+    margin-left: 90px !important;
+  }
+  .menuCreate {
+    font-size: 50px !important;
+    
+  }
+  .dropdown {
+    margin-top: 5px !important;
+    width: 40%;
+  }
+  .chain {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 992px) {
+  .menuRight {
+    flex-direction: column-reverse;
+    margin-left: 10px;
+  }
+  .input:global(.ant-input-affix-wrapper) {
+    width: 100%;
+  }
+  .menuItems {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .iconLogo {
+    margin-top: -0px;
+    margin-bottom: -50px;
+    top: 0px;
+    left: 120px;
+    size: 30px;
+    font-size: 50px;
+  }
+  .logoHomeWrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomHeader {
+    align-items: flex-start;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 50px !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+  }
+  .menuLine2 {
+    margin-left: 150px;
+  }
+  .profile {
+    margin-right: 0px !important;
+  margin-top: 5px !important;
+  }
+  .walletInfo {
+    width: 100px !important;
+    margin-left: 20px;
+    min-width: 130px !important
+  }
+  a.menuLink {
+    font-size: 11px !important;
+  }
+  .menuLine3 {
+    margin-left: 90px !important;
+  }
+  .menuCreate {
+    font-size: 50px !important;
+    
+  }
+  .dropdown {
+    margin-top: 5px !important;
+    width: 40%;
+  }
+  .chain {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .menuRight {
+    flex-direction: column-reverse;
+    margin-left: 10px;
+  }
+  .input:global(.ant-input-affix-wrapper) {
+    width: 100%;
+  }
+  .menuItems {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .iconLogo {
+    margin-top: -15px;
+    margin-bottom: -50px;
+    top: 0px;
+    left: 120px;
+    size: 30px;
+    font-size: 90px;
+  }
+  .logoHomeWrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomHeader {
+    align-items: flex-start;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 50px !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+  }
+  .menuLine2 {
+    margin-left: 150px;
+  }
+  .profile {
+    margin-right: 0px !important;
+  margin-top: 5px !important;
+  }
+  .walletInfo {
+    width: 100px !important;
+    margin-left: 20px;
+    min-width: 130px !important
+  }
+  a.menuLink {
+    font-size: 11px !important;
+  }
+  .menuLine3 {
+    margin-left: 90px !important;
+  }
+  .menuCreate {
+    font-size: 50px !important;
+    
+  }
+  .dropdown {
+    margin-top: 5px !important;
+    width: 40%;
+  }
+  .chain {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .menuRight {
+    flex-direction: column-reverse;
+    margin-left: 10px;
+  }
+  .input:global(.ant-input-affix-wrapper) {
+    width: 100%;
+  }
+  .menuItems {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .iconLogo {
+    margin-top: -15px;
+    margin-bottom: -50px;
+    top: 0px;
+    left: 120px;
+    size: 30px;
+    font-size: 90px;
+  }
+  .logoHomeWrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomHeader {
+    align-items: flex-start;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 50px !important;
+  }
+  .bottomHeader :global(.ant-menu-item) {
+    margin: 0 8px 0 0 !important;
+  }
+  .menuLine2 {
+    margin-left: 150px;
+  }
+  .profile {
+    margin-right: 0px !important;
+  margin-top: 5px !important;
+  }
+  .walletInfo {
+    width: 100px !important;
+    margin-left: 20px;
+    min-width: 130px !important
+  }
+  a.menuLink {
+    font-size: 18px !important;
+  }
+  .menuLine3 {
+    margin-left: 90px !important;
+  }
+  .menuCreate {
+    font-size: 50px !important;
+    
+  }
+  .dropdown {
+    margin-top: 5px !important;
+    width: 40%;
+  }
+  .chain {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .walletInfo {
+    min-width: 220px;
+  }
+  .profile {
+    margin-right: -50px;
+  }
+  
+}

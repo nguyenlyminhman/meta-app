@@ -1,0 +1,197 @@
+/* open-sans-regular - latin - modern browsers */
+@font-face {
+  font-family: GILROY;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../font/Gilroy_Regular.otf");
+}
+.wrapperCollapsed {
+  height: min-content;
+  /* border: #f27252 solid 1px; */
+  padding: auto;
+  top: 200px;
+  left: 0px;
+}
+
+.filterSider:global(.ant-layout-sider) {
+  /* margin-top: 80px; */
+  padding: 18px;
+  height: 100%;
+}
+
+.filterTitle {
+  /* background: white; */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterIcon {
+  /* background: white; */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.label:global(.ant-radio-button-wrapper) {
+  width: 100%;
+  border-radius: 10px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 1px solid #617ad3 !important;
+  color: #617ad3;
+  font-family: "GILROY ";
+}
+
+.label:not(:global(.mobile)):hover,
+.label:global(.ant-radio-button-wrapper-checked) {
+  color: white !important;
+  background: linear-gradient(180deg, #27aae1 0%, #617ad3 100%) !important;
+}
+
+.label:global(.ant-radio-button-wrapper.mobile) {
+  color: #27aae1 !important;
+}
+
+.label:global(.ant-radio-button-wrapper:focus-within),
+.label:global(.ant-radio-button-wrapper-checked:focus-within),
+.collectionLabel:global(.ant-radio-button-wrapper-checked:focus-within) {
+  box-shadow: none !important;
+}
+
+.title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.titleGroup {
+  font-size: 16px;
+}
+
+.collectionLabel {
+  background: transparent;
+  color: #000000;
+  border: none !important;
+  font-weight: 700;
+  padding: 0;
+}
+
+.collectionLabel:global(.ant-radio-button-wrapper-checked) {
+  background: none !important;
+  color: #f27252 !important;
+}
+
+.labelText {
+  font-family: "GILROY ";
+}
+
+:global(.ant-radio-button-wrapper-checked) .labelText {
+  color: #27aae1 !important;
+  font-family: "GILROY ";
+}
+
+.inputSearch:global(.ant-input) {
+  height: 40px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  background-color: transparent;
+  color: #000000;
+}
+
+.inputSearch::placeholder {
+  text-align: center;
+}
+
+.avatarCategory {
+  border-radius: 4px;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+:global(.ant-layout.ant-layout-has-sider) {
+  flex-direction: column !important;
+}
+
+.button:global(.ant-btn) {
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .filterSider:global(.ant-layout-sider) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    height: unset;
+    max-height: 90%;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px;
+    z-index: 999;
+  }
+  .collectionLabel:global(.ant-radio-button-wrapper) {
+    padding: 0 5px;
+  }
+  .label:global(.ant-radio-button-wrapper) {
+    font-size: 12px !important;
+    padding: 0;
+    font-family: "GILROY ";
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .titleGroup {
+    font-size: 12px;
+  }
+  .divider {
+    margin: 12px 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .filterSider:global(.ant-layout-sider) {
+    margin-top: 200px;
+  }
+  .wrapperCollapsed{
+    margin-top: 200px;
+
+  }
+  .textButton{
+    font-size: 10px !important;
+  }
+  .labelText{
+
+    margin-top: 5px !important;
+    font-size: 12px !important;
+  }
+  /* .collectionLabel:global(.ant-radio-button-wrapper) {
+    padding: 0 5px;
+  }
+  .label:global(.ant-radio-button-wrapper) {
+    font-size: 12px !important;
+    padding: 0;
+    font-family: 'GILROY ';
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .titleGroup {
+    font-size: 12px;
+  }
+  .divider {
+    margin: 12px 0;
+  } */
+}
